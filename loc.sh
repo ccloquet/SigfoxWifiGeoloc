@@ -5,6 +5,8 @@
 
 set -e
 
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
 interface=($(ifconfig | grep wlan | awk '{print $1}'))
 list=($(iwlist "$interface" scanning | grep Address | awk '{print $5}'))
 
