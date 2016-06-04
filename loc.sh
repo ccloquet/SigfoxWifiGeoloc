@@ -32,4 +32,4 @@ fi
 
 echo $b
 
-sudo python /home/pi/iot/sendsigfox.py $b
+sudo python /home/pi/sendsigfox.py $b
